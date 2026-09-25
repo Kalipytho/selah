@@ -12,20 +12,17 @@ import settingsRoutes from './routes/settingsRoutes.js'
 
 import { createInitialAdmin } from './controllers/authController.js'
 
-
 /* =========================================
    LOAD ENVIRONMENT VARIABLES
 ========================================= */
 
 dotenv.config()
 
-
 /* =========================================
    CREATE EXPRESS APP
 ========================================= */
 
 const app = express()
-
 
 /* =========================================
    MIDDLEWARE
@@ -41,6 +38,7 @@ app.use(
       'http://localhost:5177',
       'http://localhost:5178',
       'http://localhost:5179',
+      'https://selah-murex.vercel.app',
     ],
     credentials: true,
   }),
@@ -48,7 +46,6 @@ app.use(
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
-
 
 /* =========================================
    HEALTH CHECK
@@ -60,7 +57,6 @@ app.get('/', (req, res) => {
     message: 'Selah Coffee API is running ☕',
   })
 })
-
 
 /* =========================================
    API ROUTES
@@ -75,7 +71,6 @@ app.use('/api/menu', menuRoutes)
 app.use('/api/messages', messageRoutes)
 
 app.use('/api/settings', settingsRoutes)
-
 
 /* =========================================
    ERROR HANDLER
@@ -96,7 +91,6 @@ app.use((error, req, res, next) => {
     message: 'Something went wrong',
   })
 })
-
 
 /* =========================================
    START SERVER
