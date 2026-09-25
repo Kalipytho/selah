@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Eye, EyeOff, LockKeyhole, Mail, ArrowUpRight } from 'lucide-react'
 
-const API_URL = 'http://localhost:5000/api'
+const API_URL = 'https://selah-qsla.onrender.com/api'
 
 function AdminLogin() {
   const [email, setEmail] = useState('')

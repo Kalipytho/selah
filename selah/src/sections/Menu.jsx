@@ -6,7 +6,7 @@ import {
 } from 'lucide-react'
 
 const API_URL =
-  'http://localhost:5000/api'
+  'https://selah-qsla.onrender.com/api'
 
 const CATEGORY_ORDER = [
   'Burgers',

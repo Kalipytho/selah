@@ -1,7 +1,7 @@
 import { ArrowUpRight, Eye, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
-const API_URL = 'http://localhost:5000/api'
+const API_URL = 'https://selah-qsla.onrender.com/api'
 
 function Gallery() {
   const [galleryImages, setGalleryImages] = useState([])

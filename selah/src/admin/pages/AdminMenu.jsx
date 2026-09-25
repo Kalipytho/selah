@@ -3,7 +3,7 @@ import { Pencil, Plus, Trash2, X } from 'lucide-react'
 
 import AdminSidebar from '../components/AdminSidebar'
 
-const API_URL = 'http://localhost:5000/api'
+const API_URL = 'https://selah-qsla.onrender.com/api'
 
 function AdminMenu() {
   const [menu, setMenu] = useState([])

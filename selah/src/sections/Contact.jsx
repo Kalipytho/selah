@@ -11,7 +11,7 @@ import {
 } from 'lucide-react'
 import SectionHeading from '../components/SectionHeading'
 
-const API_URL = 'http://localhost:5000/api'
+const API_URL = 'https://selah-qsla.onrender.com/api'
 
 function Contact() {
   const [settings, setSettings] = useState({

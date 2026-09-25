@@ -11,7 +11,7 @@ import {
 
 import AdminSidebar from '../components/AdminSidebar'
 
-const API_URL = 'http://localhost:5000/api'
+const API_URL = 'https://selah-qsla.onrender.com/api'
 
 function AdminMessages() {
   const [messages, setMessages] = useState([])
